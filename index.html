@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+    <script language="javascript" src="libraries/p5.dom.js"></script>
+    <script language="javascript" type="text/javascript" src="sketch.js"></script>
+    <style>
+    body {
+      padding: 20px;
+    }
+
+    </style>
+  </head>
+
+  <body>
+
+    <p>
+      Given that A > B in a group choice between those two options, and a percentage of 100% reporting, calculate the inverse degree to which B > A for the remaining percentage yet to report, to end up at 50%/50%.
+    </p>
+
+
+    <p>
+      Votes cast: <span id="cast">50</span>%<input id="castSlider" type="range" min="0" max="100"/><br/>
+      Current A: <span id="currentA">50</span>%<input id="currentAslider" type="range" min="0" max="100"/><br/>
+      Current B: <span id="currentB">50</span>%
+    </p>
+
+    <p>
+      Votes left: <span id="leftover">50</span>%<br/>
+      A gets remaining: <span id="remainingA">50</span>%<input id="remainingAslider" type="range" min="0" max="100"/><br/>
+      B gets remaining: <span id="remainingB">50</span>%
+    </p>
+
+    <p>
+      Final Outcome A: <span id="finalA">50</span>%<br/>
+      Final Outcome B: <span id="finalB">50</span>%
+    </p>
+
+
+  </body>
+</html>
